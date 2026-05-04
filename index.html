@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2048</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <h1>2048</h1>
+        <div class="score-boxes">
+          <div class="box">
+            <span class="label">SCORE</span>
+            <span id="score">0</span>
+          </div>
+          <div class="box">
+            <span class="label">BEST</span>
+            <span id="best">0</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="controls">
+        <button id="new-game">New Game</button>
+        <p>← ↑ → ↓ キー または スワイプで操作</p>
+      </div>
+
+      <section class="board-wrap">
+        <div id="board" class="board" aria-label="2048 board"></div>
+        <div id="overlay" class="overlay hidden">
+          <p id="overlay-text"></p>
+          <button id="retry">もう一度</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
